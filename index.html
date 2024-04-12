@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <title>Student Attendance</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="form">
+                <fieldset>
+                    <legend>ATTENDANCE FORM</legend>
+                    <form class="myForm" action="">
+                        <p>
+                            <label for="Name">Student Name:</label>
+                            <br>
+                            <input type="text" name="name" id="name" placeholder="Enter Student Name" required>
+                        </p>
+
+                        <p>
+                            <label for="Reg">Student Reg No.:</label>
+                            <br>
+                            <input type="text" name="reg" id="reg" placeholder="Enter Registration No." required>
+                        </p>
+
+                        <p>
+                            <label for="fac">Faculty:</label>
+                            <br>
+                            <select name="fac" id="fac" required>
+                                <option value="">Select Faculty</option>
+                                <option >Natural Applied and Environmental Sciences</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="dept">Department:</label>
+                            <br>
+                            <select name="dept" id="dept" required>
+                                <option value="">Select Department</option>
+                                <option >Computer Science</option>
+                                <option >MicroBiology</option>
+                                <option>Architecture</option>
+                                <option>BioChemistry</option>
+                                <option>Mathematics</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="level">Level:</label>
+                            <br>
+                            <select name="level" id="level" required>
+                                <option value="">Select Level</option>
+                                <option>100 LEVEL</option>
+                                <option>200 LEVEL</option>
+                                <option>300 LEVEL</option>
+                                <option>400 LEVEL</option>
+                                <option>500 LEVEL</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="date">DATE & TIME:</label>
+                            <br>
+                            <input type="date" name="date" id="date" required>
+                            <br>
+                            <input type="time" name="time" id="time" required>
+                        </p>
+
+                        <p>
+                            <input type="button" onclick="formData()" value="SUBMIT">
+                        </p>
+                    </form>
+                </fieldset>
+            </div>
+        </section>
+
+        <section class="table-con">
+            <table id="tableInfo"> 
+                <tr>
+                    <th>STUDENT NAME</th>
+                    <th>LEVEL</th>
+                    <th>REG NO</th>
+                    <th>FACULTY</th>
+                    <th>DEPARTMENT</th>
+                    <th>DATE & TIME</th>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
